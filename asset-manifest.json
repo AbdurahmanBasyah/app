@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fuki-tasks/static/css/main.d775b9b4.css",
+    "main.js": "/fuki-tasks/static/js/main.d08af6af.js",
+    "static/js/787.c1112931.chunk.js": "/fuki-tasks/static/js/787.c1112931.chunk.js",
+    "index.html": "/fuki-tasks/index.html",
+    "main.d775b9b4.css.map": "/fuki-tasks/static/css/main.d775b9b4.css.map",
+    "main.d08af6af.js.map": "/fuki-tasks/static/js/main.d08af6af.js.map",
+    "787.c1112931.chunk.js.map": "/fuki-tasks/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d775b9b4.css",
+    "static/js/main.d08af6af.js"
+  ]
+}
