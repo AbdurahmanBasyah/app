@@ -171,9 +171,9 @@ function App() {
             <div className='button gray-button' variant="secondary" onClick={handleClose}>
               Close
             </div>
-            <div className='button green-button' onClick={() => setCurrentModalPage(2)}>
+            <button className='button green-button' disabled={!inputName || !inputDate || inputTags.length === 0} onClick={() => setCurrentModalPage(2)}>
               Next
-            </div>
+            </button>
           </ModalFooter> : <ModalFooter>
             <div className='button gray-button' variant="secondary" onClick={() => setCurrentModalPage(1)}>
               Back

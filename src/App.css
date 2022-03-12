@@ -141,15 +141,23 @@
 }
 
 .tags-container {
-    display: flex;
+    display: Flex;
     margin-top: 16px;
+    min-width: 100%;
+    overflow: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .tag-item {
     padding: 6px 16px;
     margin-right: 8px;
+    margin-top: 8px;
     border-radius: 30px;
     font-size: 17.5px;
+    align-self: center;
+    text-align: center;
+    flex: 1 1 120px;
 }
 
 .bg-tag-normal {
