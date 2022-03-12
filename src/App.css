@@ -1,38 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 .App {
-  text-align: center;
+    background-color: #F8F7F7;
+    min-height: 100vh;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    max-width: 768px;
+    padding: 40px;
+    padding-top: 64px;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header>h2 {
+    font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+    border: none;
+    border-radius: 10px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.green-button {
+    background-color: #A1D776;
+    font-size: 20px;
+    padding: 12px 36px;
+}
+
+.gray-button {
+    background-color: #CCCCCC;
+    font-size: 20px;
+    padding: 12px 36px;
+}
+
+.description-container {
+    margin-top: 22px;
+}
+
+.description {
+    margin-top: 36px;
+}
+
+.white-button {
+    background-color: #ffffff;
+    font-size: 17.5px;
+    padding: 12px 36px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.taskCard {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 48px 24px 96px 72px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.sectionTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 45px;
+}
+
+.title-timer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.title::before {
+    content: '';
+    padding: 10px;
+    margin-right: 22px;
+    background-color: #A1D776;
+}
+
+.task-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.timerContainer {
+    display: flex;
+}
+
+.timerItem {
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 16px;
+    padding: 16px;
+    border-radius: 10px;
+    min-width: 72px;
+}
+
+.timerItem>p {
+    font-size: 10px;
+}
+
+.deadlineDate {
+    font-size: 17.5px;
+    margin-top: 14px;
+    color: #676767;
+}
+
+.detail-button {
+    position: absolute;
+    right: 22px;
+    bottom: 16px;
+}
+
+.delete-button {
+    position: absolute;
+    left: 36px;
+    background-color: #F44545;
+    font-size: 20px;
+    padding: 12px 36px;
+    bottom: 16px;
+}
+
+.tags-container {
+    display: flex;
+    margin-top: 16px;
+}
+
+.tag-item {
+    padding: 6px 16px;
+    margin-right: 8px;
+    border-radius: 30px;
+    font-size: 17.5px;
+}
+
+.bg-tag-normal {
+    background-color: #9094FB;
+}
+
+.bg-tag-ongoing {
+    background-color: #FBF690;
+}
+
+.bg-tag-completed {
+    background-color: #90FBFB;
+}
+
+.tag-clicked {
+    opacity: 0.7;
+    box-shadow: 0px 2px 5px 1px black inset;
+}
+
+.tag-option {
+    box-shadow: -2px -4px 10px #333333 inset;
+    cursor: pointer;
 }
