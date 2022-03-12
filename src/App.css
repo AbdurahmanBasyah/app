@@ -158,6 +158,7 @@
     align-self: center;
     text-align: center;
     flex: 1 1 120px;
+    max-width: 120px;
 }
 
 .bg-tag-normal {
